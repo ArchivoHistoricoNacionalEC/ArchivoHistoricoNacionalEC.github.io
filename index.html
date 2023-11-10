@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursos generados por el Archivo Histórico Nacional de Ecuador</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilo para centrar la imagen */
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Alinea la imagen en el centro vertical */
+            height: 55vh; /* Altura ajustable según tu preferencia */
+        }
+        /* Estilo para el título en negritas */
+        .title {
+            font-weight: bold;
+        }
+        /* Estilo para el texto debajo del título */
+        .center-text {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Segoe Script', cursive;
+        }
+        /* Estilo para el fondo de toda la página */
+        body {
+            background-color: #fff; /* Fondo en blanco */
+            background-image: url('fondoPagina2.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /* Estilo para el año 2023 y soporte técnico */
+        .year-support {
+            font-family: sans-serif;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container text-center my-5">
+        <!-- Título en negritas -->
+        <h1 class="display-4 title">Archivo Histórico Nacional</h1>
+        <hr class="my-4">
+    </div>
+    
+    <div class="container text-center my-5">
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="curso.html">Curso de Epistemología</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Taller de paleografía.html">Taller de paleografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proximamente2.html">Próximamente</a>
+                    </li>
+                    <!-- Espacio entre "Próximamente" y los botones de sesión -->
+                    <li class="nav-item" style="margin-right: 40px;"></li>
+                    <!-- Botones de sesión: Iniciar Sesión, Crear Usuario, Salir -->
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary" id="login-btn" data-toggle="modal" data-target="#login-modal" style="display: none;">Iniciar Sesión</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success" id="signup-btn" data-toggle="modal" data-target="#signup-modal" style="display: none;">Crear Usuario</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-danger" id="logout-btn" data-toggle="modal" data-target="#logout-modal" style="display: none;">Salir</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Imagen centrada un poco más abajo de la página -->
+    <div class="center-image">
+        <img src="logo.png" width="200" height="200" alt="Imagen de logo">
+    </div>
+
+    <!-- Texto centrado debajo del título con fuente personalizada -->
+    <div class="text-center my-3 center-text">
+        <span class="year-support">2023</span>
+    </div> 
+
+    <div class="center-text year-support">
+        Correo soporte: archivohistoriconacional.ahn@culturaypatrimonio.gob.ec
+    </div> 
+    <!-- Modals -->
+    <div id="login-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Iniciar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="signin-form">
+                        <!-- Formulario de inicio de sesión -->
+                        <div class="form-group">
+                            <label for="login-email">Correo electrónico</label>
+                            <input type="email" class="form-control" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Contraseña</label>
+                            <input type="password" class="form-control" id="login-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="signup-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="signup-form">
+                        
+                        <div class="form-group">
+                            <label for="signup-email">Correo electrónico</label>
+                            <input type="email" class="form-control" id="signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Contraseña</label>
+                            <input type="password" class="form-control" id="signup-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   
+ 
+    </div>
+   
+    <div id="logout-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cerrar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Estás seguro de que deseas cerrar sesión?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                   
+                    <button type="button" class="btn btn-danger" id="logout-confirm-btn">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Importa las bibliotecas de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+    <!-- Configuración de Firebase y inicialización -->
+    <script>
+        // Tu configuración de Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBrny7pKET3yB5lIuPy4qoHc8tGng_Aq74",
+            authDomain: "foro-31c0b.firebaseapp.com",
+            databaseURL: "https://foro-31c0b-default-rtdb.firebaseio.com",
+            projectId: "foro-31c0b",
+            storageBucket: "foro-31c0b.appspot.com",
+            messagingSenderId: "699214140366",
+            appId: "1:699214140366:web:957cd6a90aa4bcfcabd19f",
+            measurementId: "G-NZ5HCB0PEP"
+        };
+
+        // Inicializa Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const fs = firebase.firestore();
+    </script>
+
+    <!--custome code-->
+    <script src="main.js"></script>
+</body>
+</html>

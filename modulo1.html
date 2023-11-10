@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modulo 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-storage.js"></script>
+    <style>
+        .course-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .course-details {
+            flex-grow: 1;
+            margin-left: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-course text-center py-4 bg-primary text-white">
+        <h1>Modulo 1 (1500-1599)</h1>
+    </header>
+    <nav class="nav-course navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Taller de paleografía.html">Taller de paleografía</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modulo2.html">Modulo 2 (1600-1699)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modulo3.html">Modulo3 (1700-1799)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main-course py-4">
+        <section id="content" class="container">
+            <h2>Modulo 1 (1500-1599)</h2>
+            <div class="course-info">
+                <img src="mod1/david_chamorro.png" width="200" height="200" alt="Imagen de la persona">
+                <div class="course-details">
+                    <h3>Dr. David Chamorro JS</h3>
+                    <p style="text-align: justify;">David Chamorro es Hermano jesuita desde 1997. Estudió su
+                        pregrado en la Pontificia Universidad Católica del Ecuador , trabajó como docente en los colegios
+                        jesuitas de Quito, Cuenca y Guayaquil. Posee una maestría en Historia por la U. Javeriana, ha sido
+                        investigador en el Archivo Histórico Javeriano; magíster en Historia de la Iglesia por la U.
+                        Gregoriana de Roma y cursa un doctorado en Historia de América Latina, en la Universidad Andina
+                        "Simón Bolívar" (Quito). Desde 2017 es profesor de Historia en la PUCE. Es Secretario de la
+                        Academia Ecuatoriana de Historia Eclesiástica. Ha publicado libros como: Regreso y expulsión de
+                        la Compañía de Jesús de la República del Ecuador, 1850-1852 (2014); Los jesuitas en Manabí y
+                        Esmeraldas, 1918-1962 (2018); así como varios artículos para publicaciones nacionales y
+                        extranjeras.</p>
+
+                </div>
+            </div>
+            <hr class="section-divider">
+
+            <section id="Clases">
+                <h3>Clases:</h3>
+                <ul>
+                    <li> Presenciales: 13, 15, 17 de noviembre.</li>
+                    <li> Trabajo independiente: 14, 16 de noviembre.</li>
+                </ul>
+            </section>
+            <hr class="section-divider">
+        </section>
+        <section id="Recursos">
+            <h3>Recursos:</h3>
+            <ul>
+                <li>AHN. Fondo Corte Suprema, Sección General, Serie Tierras, caja 1 exp. 20. 1565 (folios 12, 13, 14)</li>
+                <li>AHN. Fondo Corte Suprema, Sección General, Serie Religiosos, caja 1 exp. 18. 1590 (folios 3,4; 7 y 8)</li>
+                <li>AHN. Fondo Corte Suprema, Sección General, Serie Cedularios, caja 1 vol. 1. 1563 (folios 1, 2,3; 12,13,14)
+                </li>
+                <li>AHN. Fondo Notarial, Sección Protocolos, Serie Notaría Primera, vol. 5. 1596 </li>
+                <li>AHN. Fondo Notarial, Sección Protocolos, Serie Notaría Primera, vol. 7. 1596 </li>
+                <li>AMHQ. Libro viejo del Cabildo de esta ciudad de Quito 1538, S.N., f. 113-115</li>
+            </ul>
+        </section>
+        <hr class="section-divider">
+        </section>
+        <section id="bibliografia" class="container text-center mt-4 hidden-section">
+            <h2>Bibliografía</h2>
+            <a href="mod1/AMHQ, Libro 1ro. Cabildos 1538.pdf" download
+                class="btn btn-primary mb-2 download-link">AMHQ, Libro 1ro. Cabildos 1538 (PDF)</a>
+
+            <a href="mod1/CSCedulariosc1v1compressed.pdf" download
+                class="btn btn-primary mb-2 download-link">CSCedulariosc1v1compressed (PDF)</a>
+
+            <a href="mod1/CSReligiososc1exp18compressed.pdf" download
+                class="            btn btn-primary mb-2 download-link">CSReligiososc1exp18compressed (PDF)</a>
+
+                <a href="mod1/CSTierrasc1exp20compressed.pdf" download
+                    class="btn btn-primary mb-2 download-link">CSTierrasc1exp20compressed (PDF)</a>
+    
+                <a href="mod1/DONACION DEL CONVENTO DE SANTA CATALINA DE SENA-NOT1-1596-V7.pdf" download
+                    class="btn btn-primary mb-2 download-link">DONACION DEL CONVENTO DE SANTA CATALINA DE SENA-NOT1-1596-V7
+                    (PDF)</a>
+    
+                <a href="mod1/PRIMERO TRATADO DEL CONVENTO DE SAN AGUSTIN-NOT1-1596-V5.pdf" download
+                    class="btn btn-primary mb-2 download-link">PRIMERO TRATADO DEL CONVENTO DE SAN AGUSTIN-NOT1-1596-V5
+                    (PDF)</a>
+    
+                <a href="mod1/TRANSCRIPCIÓN REAL CEDULA DE 1563 EN QUE SE FIJAN LOS LIMITES DE LA REAL AUDIENCA DE QUITO.pdf"
+                    download class="btn btn-primary mb-2 download-link">TRANSCRIPCIÓN REAL CEDULA DE 1563 EN QUE SE FIJAN LOS
+                    LIMITES DE LA REAL AUDIENCA DE QUITO (PDF)</a>
+    
+                <hr class="section-divider">
+            </section>
+    
+            <section id="subir-documento" class="container mt-4 hidden-section">
+                <h2>Subir documento en PDF</h2>
+                <input type="file" id="archivo_pdf">
+                <button id="subir_pdf">Subir PDF</button>
+            </section>
+        </main>
+    
+
+
+
+
+        
+        <script>
+            // Configura Firebase
+            var firebaseConfig = {
+                apiKey: "AIzaSyBrny7pKET3yB5lIuPy4qoHc8tGng_Aq74",
+                authDomain: "foro-31c0b.firebaseapp.com",
+                databaseURL: "https://foro-31c0b-default-rtdb.firebaseio.com",
+                projectId: "foro-31c0b",
+                storageBucket: "foro-31c0b.appspot.com",
+                messagingSenderId: "699214140366",
+                appId: "1:699214140366:web:957cd6a90aa4bcfcabd19f",
+                measurementId: "G-NZ5HCB0PEP"
+            };
+    
+            // Inicializa Firebase solo una vez
+            firebase.initializeApp(firebaseConfig);
+    
+            const auth = firebase.auth();
+            const fs = firebase.firestore();
+            const storage = firebase.storage();
+    
+            // Función para mostrar u ocultar enlaces de descarga según el estado de autenticación
+            const toggleDownloadLinks = user => {
+                const downloadLinks = document.querySelectorAll('.download-link');
+                const uploadSection = document.getElementById('subir-documento');
+    
+                if (user) {
+                    // Usuario autenticado: muestra enlaces de descarga y la sección de carga
+                    downloadLinks.forEach(link => link.style.display = 'inline-block');
+                    uploadSection.style.display = 'block';
+                } else {
+                    // Usuario no autenticado: oculta enlaces de descarga y la sección de carga
+                    downloadLinks.forEach(link => link.style.display = 'none');
+                    uploadSection.style.display = 'none';
+                }
+            };
+    
+            // Listens for auth state changes
+            auth.onAuthStateChanged(user => {
+                toggleDownloadLinks(user);
+            });
+    
+            // Escucha el evento click del botón "Subir PDF"
+            document.getElementById('subir_pdf').addEventListener('click', function () {
+                // Verifica si el usuario está autenticado
+                const user = auth.currentUser;
+                if (user) {
+                    var storageRef = storage.ref();
+                    var archivoPDF = document.getElementById('archivo_pdf').files[0];
+    
+                    if (archivoPDF) {
+                        var uploadTask = storageRef.child('archivos_subidos/' + archivoPDF.name).put(archivoPDF);
+    
+                        uploadTask.on('state_changed', function (snapshot) {
+                            // Maneja el progreso de la carga si es necesario
+                        }, function (error) {
+                            // Maneja errores de carga
+                            console.error('Error al subir el archivo: ' + error.message);
+                        }, function () {
+                            // La carga se completó con éxito
+                            console.log('El archivo se ha subido con éxito.');
+                        });
+                    } else {
+                        console.error('Selecciona un archivo PDF antes de intentar subirlo.');
+                    }
+                } else {
+                    console.log("Usuario no autenticado, no se puede subir el archivo");
+                }
+            });
+        </script>
+    </body>
+    
+    </html>
+    

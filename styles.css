@@ -1,0 +1,90 @@
+/* Estilos para index.html */
+.header-main {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav-main {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para curso.html */
+.header-course {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav-course {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-course {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para proximamente1.html y proximamente2.html */
+.header-upcoming {
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav-upcoming {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-upcoming {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: sans-serif;
+}
+#post-form-container {
+    display: none;
+}
+body {
+    background-image: url('fondoPagina.jpg'); /* Reemplaza 'tu-imagen.jpg' con el nombre de tu imagen en formato JPG */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* CSS personalizado para el mensaje de inicio de sesión */
+.login-message {
+    color: white; /* Color blanco */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negritas */
+}

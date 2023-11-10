@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>La Archivística como ciencia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .course-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .course-details {
+            flex-grow: 1;
+            margin-left: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-course text-center py-4 bg-primary text-white">
+        <h1>La Archivística como ciencia</h1>
+    </header>
+    <nav class="nav-course navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Taller de paleografía.html">Taller de paleografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proximamente2.html">Próximamente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main-course py-4">
+        <section id="content" class="container">
+            <h2>La Archivística como ciencia</h2>
+            <div class="course-info">
+                <img src="Dra. Ma. Cristina Betancur.jpg" width="200" height="200" alt="Imagen de la persona">
+                <div class="course-details">
+                    <h3>María Cristina Betancur Roldán</h3>
+                    <p style="text-align: justify;">Historiadora, Magister en Historia, estudiante del doctorado en Historia Comparada Política y Social de la Universidad Autónoma de Barcelona. Profesora e investigadora del programa Archivística de la Escuela Interamericana de Archivística de la Universidad de Antioquia. Las investigaciones y publicaciones se han desarrollado en el área de la formación y la fundamentación teórica de la archivística. En la actualidad adelanta el trabajo de investigación doctoral sobre la Historia de la Archivística en Colombia.</p>
+                
+                
+                </div>
+            </div>
+            <hr class="section-divider">
+
+        <section id="temas incluidos">
+            <h3>Temas incluidos</h3>
+             <ul>
+                <li>1.1. Evolución del concepto, objeto, método y marco conceptual</li>
+                 <li>1.2. Las tradiciones archivísticas en Latinoamérica</li>
+            </ul>
+        </section>
+    <hr class="section-divider">
+    </section>
+            <section id="bibliografia">
+                <h3>Recursos:</h3>
+                <ul>
+                    <li>Betancur Roldán, María Cristina, "Archival traditions in Latin America", en:
+                        Archival Science, 2022.</li>
+                    <li>Betancur-Roldán, María Cristina; Jaramillo, Orlanda (2021). Aproximación
+                        a la evolución del concepto de archivística. Revista Interamericana de
+                        Bibliotecología, 44(1), eIn1. https://doi.org/10.17533/udea.rib.v44n1eIn1</li>
+                </ul>
+            </section>
+            <hr class="section-divider">
+        </section>
+        <section id="bibliografia" class="container text-center mt-4">
+            <h2>Bibliografía</h2>
+            <a href="Betancourt, Aproximación a la evolución del concepto de archivística.pdf" download class="btn btn-primary mb-2">Descargar "Aproximación a la evolución del concepto de archivística" (PDF)</a>
+        
+            <a href="Betancourt, Archival traditions in Latin America.pdf" download class="btn btn-primary mb-2">Descargar "Archival traditions in Latin America" (PDF)</a>
+            <hr class="section-divider">
+        </section>
+
+    </main> 
+
+
+    <div class="container p-4" id="post-form-container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="post-form">
+                    <div class="form-group">
+                        <label for="post-title">Nombre del autor:</label>
+                        <input type="text" class="form-control" id="post-title">
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">Contenido del post:</label>
+                        <textarea class="form-control" id="post-content" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publicar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class= "container p 4"> 
+        <div class = "row"> 
+            <div = class "col-md-6 offset-md-3"> 
+                <ul class="list-group posts">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Importa las bibliotecas de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+<!-- Configuración de Firebase y inicialización -->
+<script>
+    // Tu configuración de Firebase
+    var firebaseConfig = {
+      apiKey: "AIzaSyBrny7pKET3yB5lIuPy4qoHc8tGng_Aq74",
+      authDomain: "foro-31c0b.firebaseapp.com",
+      databaseURL: "https://foro-31c0b-default-rtdb.firebaseio.com",
+      projectId: "foro-31c0b",
+      storageBucket: "foro-31c0b.appspot.com",
+      messagingSenderId: "699214140366",
+      appId: "1:699214140366:web:957cd6a90aa4bcfcabd19f",
+      measurementId: "G-NZ5HCB0PEP"
+    };
+
+    // Inicializa Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const fs = firebase.firestore();
+</script>
+
+
+      <!--custome code-->
+      <script src="main2.js"></script>
+</body>
+</html>
